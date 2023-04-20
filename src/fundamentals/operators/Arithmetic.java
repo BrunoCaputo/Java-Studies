@@ -1,4 +1,4 @@
-package fundamentals;
+package fundamentals.operators;
 
 public class Arithmetic {
 
