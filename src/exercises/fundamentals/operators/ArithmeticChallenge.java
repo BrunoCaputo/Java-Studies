@@ -1,4 +1,4 @@
-package exercises.operators;
+package exercises.fundamentals.operators;
 
 public class ArithmeticChallenge {
 
