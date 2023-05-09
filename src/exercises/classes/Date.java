@@ -1,23 +1,25 @@
 package exercises.classes;
 
 public class Date {
-    int day;
-    int month;
-    int year;
+  public int day;
+  public int month;
+  public int year;
 
-    Date() {
-        day = 1;
-        month = 1;
-        year = 1970;
-    }
+  Date() {
+    //  day = 1;
+    //  month = 1;
+    //  year = 1970;
+    this(1, 1, 1970);
+  }
 
-    Date(int initialDay, int initialMonth, int initialYear) {
-        day = initialDay;
-        month = initialMonth;
-        year = initialYear;
-    }
+  public Date(int day, int month, int year) {
+    this.day = day;
+    this.month = month;
+    this.year = year;
+  }
 
-    String getFormattedDate() {
-        return String.format("%d/%d/%d", day, month, year);
-    }
+  public String getFormattedDate() {
+    final String format = "%d/%d/%d"; // Local variable
+    return String.format(format, day, month, year);
+  }
 }
